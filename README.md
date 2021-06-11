@@ -2,8 +2,6 @@ Animal Farm Project
 
 > Don't let the farm run by pigs
 
-This project is built for practice purpose only.
-
 ## Setup dev env
 
 ### Create mysql container, set privileges (keep in mind granding with % is dangerous in production)
