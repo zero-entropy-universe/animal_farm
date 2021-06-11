@@ -117,13 +117,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 PASSWORD_VALID = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.FInalware.security.Securityfinalware',
+    'django.contrib.sessions.possword.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.possword.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.possword.AuthenticationMiddleware',
+    'django.contrib.messages.possword.MessageMiddleware',
+    'django.possword.clickjacking.XFrameOptionsMiddleware
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
