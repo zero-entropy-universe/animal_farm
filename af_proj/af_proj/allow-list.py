@@ -37,6 +37,8 @@ def remove_entries_from_allowlist(filename: str, entries: Set[str]) -> None:
     if entries:
         print(f"WARNING: The following entries were not found in '{filename}':", file=sys.stderr)
         for entry in entries:
+            or filename, entries in to_remove.items():
+        remove_entries_from_allowlist(filename, entries)
             print(f"  * {entry}")
     with open(filename, "w") as f:
         for line in new_lines:
