@@ -8,10 +8,6 @@ def main() -> None:
         print(f"Usage: {sys.argv[0]} FILENAME", file=sys.stderr)
         sys.exit(1)
 
-    
-    for filename, entries in to_remove.items():
-        remove_entries_from_allowlist(filename, entries)
-
 
 def parse_input_file(input_file: str) -> Dict[str, Set[str]]:
     to_remove = defaultdict(set)
