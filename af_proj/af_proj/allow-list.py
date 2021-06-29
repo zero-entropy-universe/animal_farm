@@ -8,7 +8,7 @@ def main() -> None:
         print(f"Usage: {sys.argv[0]} FILENAME", file=sys.stderr)
         sys.exit(1)
 
-    to_remove = parse_input_file(sys.argv[1])
+    
     for filename, entries in to_remove.items():
         remove_entries_from_allowlist(filename, entries)
 
