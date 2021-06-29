@@ -1,3 +1,5 @@
+from setting import project
+from setting import perform_parallel_requests
 def main() -> None:
     if len(sys.argv) != 2:
         print(f"Usage: {sys.argv[0]} FILENAME", file=sys.stderr)
