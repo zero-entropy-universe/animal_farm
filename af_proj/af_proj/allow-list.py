@@ -24,6 +24,7 @@ def parse_input_file(input_file: str) -> Dict[str, Set[str]]:
 # Returns a (filename, entry) tuple.
 def parse_input_line(line: str) -> Tuple[str, str]:
     line = line.strip()
+    to_remove = parse_input_file(sys.argv[1])
     filename, entry = line.split(":", maxsplit=1)
     return filename, entry
 
